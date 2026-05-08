@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - BunkerDOC</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #1a1a1a;
+        }
+        h1 {
+            color: #0d7377;
+            border-bottom: 2px solid #14b8a6;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0f766e;
+            margin-top: 30px;
+        }
+        a {
+            color: #0d7377;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.9em;
+            color: #4a5568;
+        }
+    </style>
+</head>
+<body>
+    <h1>Política de Privacidad de BunkerDOC</h1>
+    <p><strong>Última actualización:</strong> 9 de mayo de 2026</p>
+
+    <h2>1. Introducción y Responsable del Tratamiento</h2>
+    <p>BunkerDOC ("nosotros", "nuestro" o "la aplicación") se compromete a proteger su privacidad. Esta política explica cómo recopilamos, utilizamos y manejamos su información cuando utiliza nuestra aplicación de gestión documental con inteligencia artificial. A efectos de la legislación de protección de datos aplicable (incluyendo el RGPD europeo), el responsable del tratamiento de los datos que decida compartir con nosotros es el desarrollador de la aplicación.</p>
+
+    <h2>2. Datos que procesamos y dónde se almacenan</h2>
+    <p>Nuestra aplicación está diseñada para priorizar su privacidad, funcionando principalmente de forma local en su dispositivo. Estos son los datos que se manejan:</p>
+    <ul>
+        <li><strong>Documentos escaneados o subidos:</strong> Las imágenes, archivos PDF y el texto extraído (OCR) se almacenan estrictamente de forma local en su dispositivo mediante nuestra base de datos segura (Hive). Nosotros no tenemos acceso a estos archivos, no los sincronizamos en la nube ni hacemos copias de seguridad de los mismos.</li>
+        <li><strong>Datos de autenticación:</strong> Utilizamos Firebase Authentication para crear una sesión totalmente anónima. Esto nos permite gestionar su saldo de tokens sin necesidad de recopilar información personal identificable como su nombre, correo electrónico o número de teléfono.</li>
+        <li><strong>Información de uso y saldo:</strong> Para habilitar las funciones de la aplicación, su saldo de tokens asociado a su identificador anónimo se guarda de forma segura en Firestore (Google Cloud).</li>
+    </ul>
+
+    <h2>3. Procesamiento de Inteligencia Artificial</h2>
+    <p>Para ofrecer la funcionalidad de extracción inteligente y estructuración de datos, el texto obtenido de sus documentos mediante OCR se procesa de la siguiente manera:</p>
+    <ul>
+        <li>El texto se envía temporalmente a través de nuestros servidores seguros (proxy) hacia modelos de inteligencia artificial de terceros.</li>
+        <li>Nuestros servidores intermedios no registran, guardan ni almacenan el contenido de sus documentos en ningún momento.</li>
+        <li>Los datos se procesan en los proveedores de IA exclusivamente para estructurar la información solicitada (fecha, importe, categoría, etc.) y se eliminan inmediatamente una vez completada la solicitud.</li>
+        <li><strong>Importante:</strong> Sus datos y documentos NO se utilizan en ningún caso para entrenar modelos de inteligencia artificial propios ni de terceros.</li>
+    </ul>
+
+    <h2>4. Cómo usamos la información</h2>
+    <p>Utilizamos la información mínima y necesaria exclusivamente para:</p>
+    <ul>
+        <li>Extraer y organizar automáticamente los datos de sus documentos mediante IA.</li>
+        <li>Gestionar su saldo de tokens y el acceso a las diferentes funcionalidades de la app.</li>
+        <li>Garantizar el correcto funcionamiento técnico de la aplicación.</li>
+    </ul>
+
+    <h2>5. Compartición de datos con terceros</h2>
+    <p>No vendemos, alquilamos ni compartimos su información con terceros para fines publicitarios. Únicamente compartimos la información estrictamente necesaria en los siguientes casos:</p>
+    <ul>
+        <li>Con proveedores de servicios técnicos esenciales para el funcionamiento de la app (como los servicios de infraestructura de Google Firebase).</li>
+        <li>Cuando sea estrictamente necesario para cumplir con obligaciones legales aplicables o responder a requerimientos judiciales válidos.</li>
+    </ul>
+
+    <h2>6. Seguridad de los datos</h2>
+    <p>Aplicamos medidas de seguridad técnicas y organizativas para proteger la información (como la encriptación de las comunicaciones en tránsito). No obstante, dado que sus documentos se guardan localmente, la seguridad de los mismos también depende de las medidas de protección que usted aplique a su propio dispositivo (como contraseñas o biometría).</p>
+
+    <h2>7. Privacidad de los menores</h2>
+    <p>Nuestra aplicación no está dirigida a menores de 14 años y no recopilamos a sabiendas información personal de menores. Si descubrimos que hemos procesado información de un menor sin el consentimiento de sus padres o tutores legales, procederemos a eliminarla inmediatamente.</p>
+
+    <h2>8. Sus derechos (RGPD)</h2>
+    <p>Si usted reside en el Espacio Económico Europeo (EEE), la normativa le otorga derechos específicos sobre sus datos personales, incluyendo el derecho de acceso, rectificación, supresión (derecho al olvido), limitación del tratamiento y portabilidad.</p>
+    <p>Dado que BunkerDOC no recopila datos personales identificables y sus documentos permanecen en su dispositivo, usted tiene el control directo y absoluto sobre ellos: puede eliminarlos en cualquier momento simplemente borrando los archivos o desinstalando la aplicación.</p>
+
+    <h2>9. Cambios en esta Política de Privacidad</h2>
+    <p>Podemos actualizar esta política ocasionalmente para reflejar cambios en nuestras prácticas o servicios. Le notificaremos sobre cualquier cambio significativo modificando la fecha de "Última actualización" en la parte superior de este documento o mediante un aviso dentro de la aplicación.</p>
+
+    <h2>10. Contacto</h2>
+    <p>Si tiene alguna pregunta, duda o solicitud relacionada con esta Política de Privacidad o el tratamiento de sus datos, puede contactarnos a través del siguiente correo electrónico: <a href="mailto:juanal5star@gmail.com">juanal5star@gmail.com</a></p>
+
+    <div class="footer">
+        <p>© 2026 BunkerDOC. Todos los derechos reservados.</p>
+    </div>
+</body>
+</html>
